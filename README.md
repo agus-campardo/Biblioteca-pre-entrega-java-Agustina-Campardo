@@ -1,7 +1,10 @@
 # 📚 Sistema de Gestión de Biblioteca
 
-Sistema de consola en Java para administrar catálogos de libros. \n
+Sistema de consola en Java para administrar catálogos de libros.
+
 Pre-Entrega del programa Talento Tech, segundo cuatrimestre 2025. 
+
+**Idea de mejora futura en la última parte**
 
 ## Funcionalidades
 
