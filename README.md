@@ -55,6 +55,10 @@ class Prestamo {
     boolean devuelto;
 }
 ```
-Así, podría llevar un registro de qué libros se prestaron y cuándo se deberían devolver (aquí trabajaría con fechas (? ), cuáles son los libros más prestados o los usuarios más activos. 
-También debería modificar la clase 'Libro' y agregar un stock, puesto que si no hay libros disponibles, no se debería poder prestar.
-Aademás, considero que tal vez debería tener una clase más para 'Usuario' (aunque tal vez se complique). Como quiero únicamente la información básica, me interesaría el id del usuario (solo me importa la forma más simple de identificación, por lo que eligo un número) y, al igual que como se hizo con 'Libro', un métedo para conseguir aquel id. 
+Así, podría llevar un registro de qué libros se prestaron y cuándo se deberían devolver (aquí trabajaría con fechas (?, aunque tal vez se complique), cuáles son los libros más prestados o los usuarios más activos.
+
+También debería modificar la clase 'Libro' y agregar un stock (puesto que si no hay libros disponibles, no se debería poder prestar) y una cantidad de veces que han sido prestados (no me importa qué libro de los muchos que hay por el stock, solo me importa el título que se prestó más veces). 
+
+Además, tal vez me sea conveniente implementar una nueva clase para el Usuariuo en caso de querer saber quiénes son los más activos. No me importa en si quién es esa persona (refiriéndome al nombre, el mail, etc.), solo necesitaría la forma de identificación más simple (un número) y la cantidad de veces que ha pedido un libro a la biblioteca y, al igual que como se hizo para 'Libro', una forma de acceder a su id. 
+
+Entonces, al momento de querer pedir prestado un libro X, se le preguntaría a la persona si es la primera vez que pide un libro de la biblioteca. En caso de que si, se la "ingresa" al sistema con la 'cantidad de libros prestados' en 1. Caso contrario (aquí el usuario ya tiene un registro mayor o igual a 1 en su atributo 'cantidad de veces que ha pedido un libros'), se le sumaría 1 a 'cantidad de libros prestados' de ese usuario. En cualquiera de ambos casos, si la persona confirma que se lleva el libro, se debería la fecha actual y la máxima tolerancia de espera para que se devuelva aquel libro X, se le restaría 1 al stock del título que eligió llevar y se le sumaría 1 a la cantidad de veces que aquel título ha sido prestado. 
