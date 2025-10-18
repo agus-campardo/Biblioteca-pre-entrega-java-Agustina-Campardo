@@ -239,7 +239,7 @@ public class Main {
         libros.add(new Libro(2, "1984", "George Orwell", "978-0451524935", "Ciencia ficción"));
         libros.add(new Libro(3, "Don Quijote de la Mancha", "Miguel de Cervantes", "978-8424113096", "Novela clásica"));
         libros.add(new Libro(4, "Orgullo y prejuicio", "Jane Austen", "978-0141439518", "Romance"));
-        libros.add(new Libro(5, "El principito", "Antoine de Saint-Exupéry", "978-0156012195", "Fábula"));
+        libros.add(new Libro(5, "El principito", "Antoine de Saint-Exupéry", "978-0156012195", "Fabula"));
         libros.add(new Libro(6, "Harry Potter y la piedra filosofal", "J.K. Rowling", "978-8478884452", "Fantasía"));
         libros.add(new Libro(7, "Crónica de una muerte anunciada", "Gabriel García Márquez", "978-0307475348", "Novela"));
         libros.add(new Libro(8, "El nombre del viento", "Patrick Rothfuss", "978-8499082488", "Fantasía épica"));
