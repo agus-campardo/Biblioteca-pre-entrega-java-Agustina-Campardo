@@ -45,14 +45,16 @@ Como se trata de una biblioteca, no solo debería poder **agregar** o **buscar l
 
 Una posible mejora sería crear una clase `Prestamo` que permita guardar la información de cada préstamo, por ejemplo:
 
-```java
+```java 
 class Prestamo {
     int idPrestamo;
     int idLibro;
     int idUsuario;
-    Date fechaPrestamo;
-    Date fechaDevolucion;
+    Date fechaPrestado;
+    Date fechaMaxDevolucion;
     boolean devuelto;
 }
-Así, podría llevar un registro de qué libros se prestaron y cuándo se deberían devolver, cuáles son los libros más prestados o los usuarios más activos. 
+```
+Así, podría llevar un registro de qué libros se prestaron y cuándo se deberían devolver (aquí trabajaría con fechas (? ), cuáles son los libros más prestados o los usuarios más activos. 
 También debería modificar la clase 'Libro' y agregar un stock, puesto que si no hay libros disponibles, no se debería poder prestar.
+Aademás, considero que tal vez debería tener una clase más para 'Usuario' (aunque tal vez se complique). Como quiero únicamente la información básica, me interesaría el id del usuario (solo me importa la forma más simple de identificación, por lo que eligo un número) y, al igual que como se hizo con 'Libro', un métedo para conseguir aquel id. 
