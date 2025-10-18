@@ -18,29 +18,22 @@ El programa permite realizar operaciones relacionadas a la gestión de una bibli
 | `6` | **Editar información de un libro** (nombre, autor, ISBN, género) existente |
 | `7` | **Eliminar un libro** del catálogo |
 
-## Estructura del código
-
-El proyecto está compuesto por dos clases principales:
+## 🧱 Estructura del proyecto
 
 ### `Libro.java`
-Continene la información de la clase 'Libro':  
-**Atributos:**
-- `int id`: identificador único del libro.  
-- `String titulo`: título del libro.  
-- `String autor`: nombre del autor.  
-- `String isbn`: código ISBN.  
-- `String genero`: género.
----
+Clase que representa un libro con sus atributos:
+- `id`
+- `titulo`
+- `autor`
+- `isbn`
+- `genero`
+Tiene un constructor y un método `coincideId(int id)` para buscar por ID.
 
-### 💻 `Main.java`
-Contiene operaciones de control de la biblioteca.
-
-**Funciones principales:**
-- `crearLibro(...)` → permite agregar un nuevo libro.  
-- `listarLibros(...)` → muestra el catálogo completo.  
-- `buscarLibroPorTitulo(...)`, `buscarLibroPorAutor(...)`, `buscarLibroPorGenero(...)` → permiten búsquedas específicas.  
-- `editarLibro(...)` → actualiza la información de un libro existente.  
-- `borrarLibro(...)` → elimina un libro del catálogo.  
-- `obtenerLibrosIniciales()` → carga una lista de libros inicial para comenzar.  
-
-
+### `Main.java`
+Menú principal y funciones que gestionan la biblioteca:
+- **crearLibro()**: agrega un libro nuevo.  
+- **listarLibros()**: muestra todos los libros (el catálogo).  
+- **buscarLibroPorTitulo()**, **buscarLibroPorAutor()**, **buscarLibroPorGenero()**: buscan libros según criterio.  
+- **editarLibro()**: permite modificar datos de un libro.  
+- **borrarLibro()**: elimina un libro del catálogo.  
+- **obtenerLibrosIniciales()**: carga una lista inicial de libros.
